@@ -36,7 +36,7 @@ class Main
     function getRemainingDay()
     {
         $now = new \DateTime();
-        return $now->diff($this->getRemainingDate())->days;
+        return $now->diff(new \DateTime($this->getRemainingDate()))->days;
     }
 
     /**
@@ -44,7 +44,7 @@ class Main
      */
     function getRemainingDate()
     {
-        return new \DateTime("@" . $this->socketData['validTo_time_t']);
+        return date("Y-m-d" . $this->socketData['validTo_time_t']);
     }
 
     /**
