@@ -1,8 +1,8 @@
 # SslCheck
 Provides information about the ssl certificate
 
+$domain = 'webuti.com'; \n
+$check = new Main($domain); \n
 
-$check = new Main('webuti.com');
-//$check = Webuti\SslCheck('webuti.com');
-print_r($check->getRemainingDate());
+print_r($check->getRemainingDate()); \n
 
