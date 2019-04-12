@@ -44,7 +44,7 @@ class Main
      */
     function getRemainingDate()
     {
-        return date("Y-m-d" . $this->socketData['validTo_time_t']);
+        return date("Y-m-d" , $this->socketData['validTo_time_t']);
     }
 
     /**
